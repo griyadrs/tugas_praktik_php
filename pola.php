@@ -1,7 +1,9 @@
 <?php
+// Declatariton Variable
 $wide = 5;
-$hole = 0;
-// segitiga colenurun
+$distance = 0;
+
+// segitiga menurun
 for ($col = 1; $col <= $wide; $col++) {
   for ($line = 1; $line <= $col; $line++) {
       echo "* ";
@@ -9,7 +11,7 @@ for ($col = 1; $col <= $wide; $col++) {
   echo "<br>";
 }
 echo "<br>";
-// segitiga colenurun refleksi
+// Descending Triangle Refleksi
 for ($col = $wide; $col >= 1; $col--) {
   for ($line = 1; $line <= $col; $line++) {
       echo "* ";
@@ -17,29 +19,15 @@ for ($col = $wide; $col >= 1; $col--) {
   echo "<br>";
 }
 echo "<br>";
-// segitiga colenurun v2
+// Descending Triangle v2
 for ($col = 1; $col <= $wide; $col++) {
-  $hole++;
+  $distance++;
   for ($line = 1; $line <= $col; $line++) {
-      if ($hole == 3 and $line == 2) {
+      if ($distance == 3 and $line == 2) {
           echo "# ";
-      } else if ($hole == 4 and $line == 2) {
+      } elseif ($distance == 4 and $line == 2) {
           echo "# ";
-      } else if ($hole == 4 and $line == 3) {
-          echo "# ";
-      } else {
-          echo "* ";
-      }
-  }
-  echo "<br>";
-}
-echo "<br>";
-// persegi panjang
-$hole = 0;
-for ($col = 1; $col <= 3; $col++) {
-  $hole++;
-  for ($line = 1; $line <= $wide; $line++) {
-      if ($hole == 2 and $line == 3) {
+      } elseif ($distance == 4 and $line == 3) {
           echo "# ";
       } else {
           echo "* ";
@@ -48,11 +36,25 @@ for ($col = 1; $col <= 3; $col++) {
   echo "<br>";
 }
 echo "<br>";
-// persegi panlineang v2
+// Rectangle
+$distance = 0;
 for ($col = 1; $col <= 3; $col++) {
-  $hole++;
+  $distance++;
   for ($line = 1; $line <= $wide; $line++) {
-      if ($hole == 2 and $line == 3) {
+      if ($distance == 2 and $line == 3) {
+          echo "# ";
+      } else {
+          echo "* ";
+      }
+  }
+  echo "<br>";
+}
+echo "<br>";
+// Rectangle v2
+for ($col = 1; $col <= 3; $col++) {
+  $distance++;
+  for ($line = 1; $line <= $wide; $line++) {
+      if ($distance == 2 and $line == 3) {
           echo "# ";
       }
       else {
