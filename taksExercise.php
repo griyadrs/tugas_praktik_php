@@ -1,8 +1,7 @@
 <?php
 
 // Calculate Area of ​​a Circle
-function circleArea(int $diameter = 1)
-{
+function circleArea(int $diameter = 1) {
     $diameter *= $diameter * 3.14 / 4;
     return $diameter = round($diameter, 2);
 }
@@ -20,8 +19,7 @@ $total = circleArea(); // Diameter = default
 echo "<br> {$total}";
 
 // Temperature Conversion
-function tempConversion(float $fahrenheit = 1)
-{
+function tempConversion(float $fahrenheit = 1) {
     $fahrenheit *= 1.8;
     return $fahrenheit += 32;
 }
@@ -39,8 +37,7 @@ $total = tempConversion(); // Celcius = default
 echo "1 Celcius = {$total} Fahrenhait <br>";
 
 // Determining Odd or Even Numbers
-function numCheck(int $number = 1)
-{
+function numCheck(int $number = 1) {
     if ($number % 2 == 0) { // Even Number
         return "{$number} is an even number";
     } else if ($number % 2 == 1) { // Odd Number
@@ -61,8 +58,7 @@ $total = numCheck(); // Number = default;
 echo "{$total} <br>";
 
 // Calculating Purchase Discounts
-function discount($price = 10000, $discount = 5)
-{
+function discount($price = 10000, $discount = 5) {
     $discount = $price / $discount;
     $price -= $discount;
     return "Total Discount Rp.{$discount} 
