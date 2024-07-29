@@ -1,8 +1,10 @@
 <?php
 
 // Calculate Area of ​​a Circle
-function circleArea(int $diameter = 1) {
+function circleArea(int $diameter = 1)
+{
     $diameter *= $diameter * 3.14 / 4;
+
     return $diameter = round($diameter, 2);
 }
 
@@ -19,8 +21,10 @@ $total = circleArea(); // Diameter = default
 echo "<br> {$total}";
 
 // Temperature Conversion
-function tempConversion(float $fahrenheit = 1) {
+function tempConversion(float $fahrenheit = 1)
+{
     $fahrenheit *= 1.8;
+
     return $fahrenheit += 32;
 }
 
@@ -41,6 +45,7 @@ function numCheck(int $number = 1) {
     if ($number % 2 == 0) { // Even Number
         return "{$number} is an even number";
     } else if ($number % 2 == 1) { // Odd Number
+        
         return "{$number} is an odd number";
     }
 }
@@ -61,7 +66,9 @@ echo "{$total} <br>";
 function discount($price = 10000, $discount = 5) {
     $discount = $price / $discount;
     $price -= $discount;
-    return "Total Discount Rp.{$discount} 
+
+    return "Total Discount Rp.{$discount}
+
     <br> Total Prices Rp.{$price}";
 }
 
