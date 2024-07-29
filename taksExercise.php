@@ -43,6 +43,7 @@ echo "1 Celcius = {$total} Fahrenhait <br>";
 // Determining Odd or Even Numbers
 function numCheck(int $number = 1) {
     if ($number % 2 == 0) { // Even Number
+                           
         return "{$number} is an even number";
     } else if ($number % 2 == 1) { // Odd Number
         
